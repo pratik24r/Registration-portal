@@ -1,0 +1,50 @@
+package Registration_from.Registratiom_from;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Employee_F {
+	WebDriver driver;
+	@BeforeTest	
+	void launch() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
+	
+	
+	
+	@Test
+	public void Validate_url() {
+		driver.get("http://localhost:8080/azure-employee-2.2-SNAPSHOT/");
+	
+	}
+}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+       
+

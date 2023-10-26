@@ -1,0 +1,17 @@
+package Registration_from.Registratiom_from;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Employee_F {
+	
+	public static void main(String[] args) {
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://localhost:8080/azure-employee-2.2-SNAPSHOT/");
+	}
+       
+}
